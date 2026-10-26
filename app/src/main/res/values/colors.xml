@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  APK-AntiSpliter — "Elegant Dark" palette.
+  A deep charcoal/ink background paired with a champagne-gold accent and a
+  soft silver secondary. The light variant uses warm paper tones so the same
+  gold accent stays readable in daylight.
+-->
+<resources>
+    <!-- Legacy names still referenced by code / other resources -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary accent: champagne gold -->
+    <color name="gold_200">#F7E3B8</color>
+    <color name="gold_300">#F2D28C</color>
+    <color name="gold_400">#EFC46A</color>
+    <color name="gold_500">#E4B04A</color>
+    <color name="gold_600">#C9922F</color>
+    <color name="gold_700">#A5761F</color>
+    <color name="gold_soft_dark">#3A2E17</color>
+    <color name="gold_soft_light">#FBF1D8</color>
+
+    <!-- Secondary accent: cool silver -->
+    <color name="silver_200">#D7DEE6</color>
+    <color name="silver_400">#A9B6C4</color>
+    <color name="silver_600">#7C8A99</color>
+
+    <!-- Dark surfaces (ink) -->
+    <color name="ink_950">#080B10</color>
+    <color name="ink_900">#0E141B</color>
+    <color name="ink_850">#121A23</color>
+    <color name="ink_800">#18222D</color>
+    <color name="ink_700">#22303D</color>
+    <color name="ink_600">#2E3F4F</color>
+
+    <!-- Light surfaces (warm paper) -->
+    <color name="paper_50">#FCFAF5</color>
+    <color name="paper_100">#F6F2E9</color>
+    <color name="paper_200">#EDE7DA</color>
+    <color name="paper_300">#DED6C5</color>
+
+    <!-- Text -->
+    <color name="text_dark_primary">#F4F7FA</color>
+    <color name="text_dark_secondary">#9FB0BF</color>
+    <color name="text_light_primary">#151A20</color>
+    <color name="text_light_secondary">#5B6774</color>
+
+    <!-- Dividers / outlines -->
+    <color name="divider_dark">#24313E</color>
+    <color name="divider_light">#E2DACB</color>
+
+    <!-- Semantic -->
+    <color name="error_dark">#FF7A7A</color>
+    <color name="error_light">#B3261E</color>
+
+    <!--
+      Legacy aliases. main_500 / secondary_600 / main_dark_800 are used all
+      over the Java code (dialogs, FAB tint, borders), so they are remapped to
+      the new accent instead of being removed.
+    -->
+    <color name="colorPrimary">@color/gold_500</color>
+    <color name="colorAccent">@color/gold_500</color>
+    <color name="textColorPrimary">@color/text_dark_primary</color>
+    <color name="textColorSecondary">@color/text_dark_secondary</color>
+    <color name="colorHeader">@color/gold_500</color>
+    <color name="main_500">@color/gold_500</color>
+    <color name="secondary_600">@color/silver_400</color>
+    <color name="main_dark_800">@color/gold_700</color>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  On Android 12+ the platform normally replaces the app accent with the
+  user's wallpaper-derived "system accent". APK-AntiSpliter has a deliberate
+  brand palette (champagne gold), so the aliases are pinned back to it here.
+-->
+<resources>
+    <color name="main_500">@color/gold_500</color>
+    <color name="secondary_600">@color/silver_400</color>
+    <color name="main_dark_800">@color/gold_700</color>
+</resources>

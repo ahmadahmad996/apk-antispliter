@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  APK-AntiSpliter themes.
+  Design direction: "Elegant Dark" — deep ink surfaces, champagne-gold accent,
+  silver secondary, generous corner radii and hairline outlines instead of
+  heavy shadows (a flat, glass-adjacent look that still reads as Material 3).
+-->
+<resources>
+
+    <!-- ============================ DARK ============================ -->
+    <style name="Theme.MyApp.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_main_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/ink_950</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="colorPrimary">@color/gold_500</item>
+        <item name="colorOnPrimary">@color/ink_950</item>
+        <item name="colorPrimaryContainer">@color/gold_soft_dark</item>
+        <item name="colorOnPrimaryContainer">@color/gold_200</item>
+        <item name="colorPrimaryVariant">@color/gold_700</item>
+
+        <item name="colorSecondary">@color/silver_400</item>
+        <item name="colorOnSecondary">@color/ink_950</item>
+        <item name="colorSecondaryContainer">@color/ink_700</item>
+        <item name="colorOnSecondaryContainer">@color/silver_200</item>
+        <item name="colorAccent">@color/gold_500</item>
+
+        <item name="android:colorBackground">@color/ink_950</item>
+        <item name="colorOnBackground">@color/text_dark_primary</item>
+        <item name="colorSurface">@color/ink_900</item>
+        <item name="colorOnSurface">@color/text_dark_primary</item>
+        <item name="colorSurfaceVariant">@color/ink_800</item>
+        <item name="colorOnSurfaceVariant">@color/text_dark_secondary</item>
+        <item name="colorOutline">@color/divider_dark</item>
+        <item name="colorOutlineVariant">@color/ink_700</item>
+        <item name="colorError">@color/error_dark</item>
+        <item name="colorOnError">@color/ink_950</item>
+        <item name="colorControlHighlight">#33E4B04A</item>
+    </style>
+
+    <!-- ============================ BLACK ============================ -->
+    <style name="Theme.MyApp.Black" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_main_black</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="colorPrimary">@color/gold_500</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryContainer">@color/gold_soft_dark</item>
+        <item name="colorOnPrimaryContainer">@color/gold_200</item>
+        <item name="colorPrimaryVariant">@color/gold_700</item>
+
+        <item name="colorSecondary">@color/silver_400</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryContainer">#1A1A1A</item>
+        <item name="colorOnSecondaryContainer">@color/silver_200</item>
+        <item name="colorAccent">@color/gold_500</item>
+
+        <item name="android:colorBackground">@color/black</item>
+        <item name="colorOnBackground">@color/text_dark_primary</item>
+        <item name="colorSurface">#0A0A0A</item>
+        <item name="colorOnSurface">@color/text_dark_primary</item>
+        <item name="colorSurfaceVariant">#141414</item>
+        <item name="colorOnSurfaceVariant">@color/text_dark_secondary</item>
+        <item name="colorOutline">#242424</item>
+        <item name="colorOutlineVariant">#1C1C1C</item>
+        <item name="colorError">@color/error_dark</item>
+        <item name="colorOnError">@color/black</item>
+        <item name="colorControlHighlight">#33E4B04A</item>
+    </style>
+
+    <!-- ============================ LIGHT ============================ -->
+    <style name="Theme.MyApp.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_main_light</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/paper_100</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <item name="colorPrimary">@color/gold_600</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/gold_soft_light</item>
+        <item name="colorOnPrimaryContainer">@color/gold_700</item>
+        <item name="colorPrimaryVariant">@color/gold_700</item>
+
+        <item name="colorSecondary">@color/silver_600</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/paper_200</item>
+        <item name="colorOnSecondaryContainer">@color/text_light_primary</item>
+        <item name="colorAccent">@color/gold_600</item>
+
+        <item name="android:colorBackground">@color/paper_100</item>
+        <item name="colorOnBackground">@color/text_light_primary</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/text_light_primary</item>
+        <item name="colorSurfaceVariant">@color/paper_200</item>
+        <item name="colorOnSurfaceVariant">@color/text_light_secondary</item>
+        <item name="colorOutline">@color/divider_light</item>
+        <item name="colorOutlineVariant">@color/paper_300</item>
+        <item name="colorError">@color/error_light</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorControlHighlight">#26C9922F</item>
+    </style>
+
+    <!-- ======================== SHARED WIDGETS ======================== -->
+
+    <!-- Hairline "glass" card: flat, outlined, rounded. -->
+    <style name="Widget.AntiSplit.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="cardCornerRadius">22dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">?attr/colorOutline</item>
+        <item name="rippleColor">?attr/colorControlHighlight</item>
+    </style>
+
+    <!-- Small uppercase section label inside the settings sheet. -->
+    <style name="TextAppearance.AntiSplit.Section" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Big app title on the main screen. -->
+    <style name="TextAppearance.AntiSplit.Title" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+
+    <style name="TextAppearance.AntiSplit.Subtitle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="Widget.AntiSplit.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:minHeight">52dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Widget.AntiSplit.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">52dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="strokeColor">?attr/colorOutline</item>
+    </style>
+
+    <style name="Widget.AntiSplit.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="Widget.AntiSplit.Divider" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?attr/colorOutlineVariant</item>
+    </style>
+</resources>

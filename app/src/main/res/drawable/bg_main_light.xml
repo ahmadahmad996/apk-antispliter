@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Warm paper gradient with a soft gold wash, for the light theme. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#FDFBF7"
+                android:centerColor="#F6F2E9"
+                android:endColor="#EFE9DC"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:centerX="0.9"
+                android:centerY="0.0"
+                android:gradientRadius="380dp"
+                android:startColor="#33E4B04A"
+                android:endColor="#00E4B04A" />
+        </shape>
+    </item>
+</layer-list>

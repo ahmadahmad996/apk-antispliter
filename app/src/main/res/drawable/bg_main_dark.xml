@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Deep ink gradient with a faint champagne glow in the top-right corner. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#0B1118"
+                android:centerColor="#0E141B"
+                android:endColor="#070A0E"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:centerX="0.88"
+                android:centerY="0.02"
+                android:gradientRadius="420dp"
+                android:startColor="#26E4B04A"
+                android:endColor="#00E4B04A" />
+        </shape>
+    </item>
+</layer-list>
